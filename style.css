@@ -239,3 +239,117 @@ section {
   .nav-links { display: none; flex-direction: column; width: 100%; }
   .nav-links.active { display: flex; }
 }
+
+/* MODAL BACKGROUND */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+/* MODAL BOX */
+.modal-content {
+  background: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* CLOSE BUTTON */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* IMAGE STYLE INSIDE MODAL */
+.modal-content img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+.modal {
+  display: none; /* important */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background: #fff;
+  margin: 8% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modal-content img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.close {
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.tools {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #d62828; /* red */
+  font-weight: 600;
+}
+
+/* CONTACT LINKS STYLE */
+#contact a {
+  color: #d62828;          /* red text */
+  text-decoration: none;   /* remove underline */
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+#contact a:hover {
+  color: #a4161a;          /* darker red on hover */
+  text-decoration: underline;
+}
+
+#contact a {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 14px;
+  background-color: #d62828;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+#contact a:hover {
+  background-color: #a4161a;
+  transform: translateY(-2px);
+}
+
