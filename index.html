@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio | Tech VA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <h2 class="logo">My Portfolio</h2>
+    <button class="menu-toggle">☰</button>
+
+    <ul class="nav-links">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">My Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+<script>
+    const toggleBtn = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    toggleBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+
+  <!-- HERO -->
+  <header class="hero">
+    <img src="images/picter.jpg" class="profile-pic">
+    <h1>Hi, I’m Reymart 👋</h1>
+    <p>Tech Virtual Assistant | GHL | Automation | SEO</p>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+  <h2>About Me</h2>
+  <p>Hi! I’m a tech-savvy Virtual Assistant who loves turning complex tools and systems into smooth, simple workflows. I help businesses stay organized, automated, and efficient by handling the technical side of operations with confidence and precision.
+
+From setting up CRMs and automations to building funnels, managing websites, and connecting digital tools, I enjoy working behind the scenes to make everything run seamlessly. I’m quick to learn new platforms, troubleshoot issues, and find smarter ways to get things done — saving my clients time, energy, and stress.
+
+I believe technology should make business easier, not harder. That’s why I focus on creating systems that are not only functional but also easy to manage long-term. My goal is to be a reliable tech partner who helps your business grow with the right tools and support in place.</p>
+</section>
+
+
+  <!-- SERVICES -->
+  <section id="services" class="section bg-light">
+    <h2>Services</h2>
+    <div class="cards">
+      <div class="card">GoHighLevel Setup</div>
+      <div class="card">Workflow Automation</div>
+      <div class="card">Landing Pages</div>
+      <div class="card">CRM Management</div>
+    </div>
+  </section>
+
+  <!-- WORKS -->
+  <section id="work" class="section">
+    <h2>My Work</h2>
+    <div class="cards">
+      <a href="javascript:void(0);" class="card link-card" onclick="openModal('funnelModal')">GHL Funnel Sample</a>
+      <a href="javascript:void(0);" class="card link-card" onclick="openModal('websiteModal')">GHL websites Sample</a>
+      <a href="javascript:void(0);" class="card link-card" onclick="openModal('automationModal')">GHL Automation Sample</a>
+      <a href="javascript:void(0);" class="card link-card" onclick="openModal('pipelineModal')">GHL Pipeline Sample</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:carriagaai11@gmail.com">carriagaai11@gmail.com</a></p>
+    <p>LinkedIn: 
+  <a href="https://linkedin.com/in/reymartcarriaga" target="_blank">
+    linkedin.com/in/reymartcarriaga
+  </a>
+</p>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Reymart | Tech VA</p>
+  </footer>
+
+
+<!-- FUNNEL MODAL -->
+<!-- FUNNEL MODAL -->
+<div id="funnelModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('funnelModal')">&times;</span>
+    <h2>Funnel Projects</h2>
+    <!-- funnel content -->
+
+    <div class="card">
+      <img src="images/funnel1.png" alt="Funnel Overview">
+      <img src="images/funnel2.png" alt="Funnel Overview">
+      <img src="images/funnel3.png" alt="Funnel Overview">
+      <img src="images/funnel4.png" alt="Funnel Overview">
+      <h3>Product Sales Funnel</h3>
+      <p>I designed and built a complete sales funnel in GoHighLevel, including a landing page, order form, and thank-you page.
+         The funnel is structured to guide visitors smoothly from interest to purchase, with clear calls-to-action  and mobile-responsive design.
+         </p>
+    </div>
+    <p class="tools">TOOLS I USED: GoHighLevel, Funnel Builder</p>
+    
+  </div>
+</div>
+
+<!-- WEBSITE MODAL -->
+<div id="websiteModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('websiteModal')">&times;</span>
+    <h2>Website Projects</h2>
+    <!-- website content -->
+  
+    <div class="card">
+      <img src="images/gym1.png" alt="Website Overview">
+      <img src="images/gym2.png" alt="Website Overview">
+      <img src="images/gym3.png" alt="Website Overview">
+      <img src="images/gym4.png" alt="Website Overview">
+      <h3>Business Website Build</h3>
+      <p>This website was created using GoHighLevel’s website builder. I structured the layout, organized content sections, 
+        and optimized the design for both desktop and mobile viewing to ensure a clean and professional user experience.</p>
+    </div>
+<p class="tools">TOOLS I USED: GoHighLevel, Website Builder</p>
+  </div>
+</div>
+
+<!-- AUTOMATION MODAL -->
+<div id="automationModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('automationModal')">&times;</span>
+    <h2>Automation Workflows</h2>
+    <!-- automation content -->
+
+    <div class="card">
+      <img src="images/appointment.png" alt="automation Overview">
+      <img src="images/automationgym.png" alt="automation Overview">
+      <h3>Lead Nurturing Automation</h3>
+      <p>I built an automated workflow that captures new leads and sends follow-up emails and SMS messages automatically. 
+        This system helps businesses respond faster, nurture prospects, and increase conversion rates without manual work.</p>
+    </div>
+<p class="tools">TOOLS I USED: GoHighLevel, Automation Builder</p>
+  </div>
+</div>
+
+<!-- PIPELINE MODAL -->
+<div id="pipelineModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('pipelineModal')">&times;</span>
+    <h2>Pipeline Setup</h2>
+    <!-- pipeline content -->
+
+    <div class="card">
+      <img src="images/pipeline.png" alt="Pipeline Overview">
+      <h3>Sales Pipeline System</h3>
+      <p>I set up a customized sales pipeline to track leads from initial contact to closed deals.
+         Each stage was designed to help the business monitor progress, manage follow-ups, and improve overall sales organization.</p>
+    </div>
+<p class="tools">TOOLS I USED: GoHighLevel, Automation Builder</p>
+  </div>
+</div>
+
+
+<script>
+function openModal(modalId) {
+  document.getElementById(modalId).style.display = "block";
+}
+
+function closeModal(modalId) {
+  document.getElementById(modalId).style.display = "none";
+}
+
+window.addEventListener("click", function(event) {
+  document.querySelectorAll(".modal").forEach(function(modal) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+});
+</script>
+
+
+
+</body>
+</html>
