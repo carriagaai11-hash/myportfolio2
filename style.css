@@ -240,7 +240,6 @@ section {
   .nav-links.active { display: flex; }
 }
 
-
 /* MODAL BACKGROUND */
 .modal {
   display: none;
@@ -353,3 +352,4 @@ section {
   background-color: #a4161a;
   transform: translateY(-2px);
 }
+
