@@ -79,5 +79,102 @@ I believe technology should make business easier, not harder. That’s why I foc
     <p>© 2026 Reymart | Tech VA</p>
   </footer>
 
+  <!-- FUNNEL MODAL -->
+<!-- FUNNEL MODAL -->
+<div id="funnelModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('funnelModal')">&times;</span>
+    <h2>Funnel Projects</h2>
+    <!-- funnel content -->
+
+    <div class="card">
+      <img src="images/funnel1.png" alt="Funnel Overview">
+      <img src="images/funnel2.png" alt="Funnel Overview">
+      <img src="images/funnel3.png" alt="Funnel Overview">
+      <img src="images/funnel4.png" alt="Funnel Overview">
+      <h3>Product Sales Funnel</h3>
+      <p>I designed and built a complete sales funnel in GoHighLevel, including a landing page, order form, and thank-you page.
+         The funnel is structured to guide visitors smoothly from interest to purchase, with clear calls-to-action  and mobile-responsive design.
+         </p>
+    </div>
+    <p class="tools">TOOLS I USED: GoHighLevel, Funnel Builder</p>
+    
+  </div>
+</div>
+
+<!-- WEBSITE MODAL -->
+<div id="websiteModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('websiteModal')">&times;</span>
+    <h2>Website Projects</h2>
+    <!-- website content -->
+  
+    <div class="card">
+      <img src="images/gym1.png" alt="Website Overview">
+      <img src="images/gym2.png" alt="Website Overview">
+      <img src="images/gym3.png" alt="Website Overview">
+      <img src="images/gym4.png" alt="Website Overview">
+      <h3>Business Website Build</h3>
+      <p>This website was created using GoHighLevel’s website builder. I structured the layout, organized content sections, 
+        and optimized the design for both desktop and mobile viewing to ensure a clean and professional user experience.</p>
+    </div>
+<p class="tools">TOOLS I USED: GoHighLevel, Website Builder</p>
+  </div>
+</div>
+
+<!-- AUTOMATION MODAL -->
+<div id="automationModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('automationModal')">&times;</span>
+    <h2>Automation Workflows</h2>
+    <!-- automation content -->
+
+    <div class="card">
+      <img src="images/appointment.png" alt="automation Overview">
+      <img src="images/automationgym.png" alt="automation Overview">
+      <h3>Lead Nurturing Automation</h3>
+      <p>I built an automated workflow that captures new leads and sends follow-up emails and SMS messages automatically. 
+        This system helps businesses respond faster, nurture prospects, and increase conversion rates without manual work.</p>
+    </div>
+<p class="tools">TOOLS I USED: GoHighLevel, Automation Builder</p>
+  </div>
+</div>
+
+<!-- PIPELINE MODAL -->
+<div id="pipelineModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('pipelineModal')">&times;</span>
+    <h2>Pipeline Setup</h2>
+    <!-- pipeline content -->
+
+    <div class="card">
+      <img src="images/pipeline.png" alt="Pipeline Overview">
+      <h3>Sales Pipeline System</h3>
+      <p>I set up a customized sales pipeline to track leads from initial contact to closed deals.
+         Each stage was designed to help the business monitor progress, manage follow-ups, and improve overall sales organization.</p>
+    </div>
+<p class="tools">TOOLS I USED: GoHighLevel, Automation Builder</p>
+  </div>
+</div>
+
+
+<script>
+function openModal(modalId) {
+  document.getElementById(modalId).style.display = "block";
+}
+
+function closeModal(modalId) {
+  document.getElementById(modalId).style.display = "none";
+}
+
+window.addEventListener("click", function(event) {
+  document.querySelectorAll(".modal").forEach(function(modal) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+});
+</script>
+
 </body>
 </html>
