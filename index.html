@@ -66,8 +66,13 @@ I believe technology should make business easier, not harder. That’s why I foc
 
       <a href="javascript:void(0);" class="card link-card" onclick="openModal('funnelModal')">GHL Funnel Sample</a>
       <a href="javascript:void(0);" class="card link-card" onclick="openModal('websiteModal')">GHL websites Sample</a>
-      <a href="javascript:void(0);" class="card link-card" onclick="openModal('automationModal')">GHL Automation Sample</a>
+      <a href="javascript:void(0);" class="card link-card" onclick="openModal('emailtemplateModal')">GHL Email Template Sample</a>
       <a href="javascript:void(0);" class="card link-card" onclick="openModal('pipelineModal')">GHL Pipeline Sample</a>
+      <a href="javascript:void(0);" class="card link-card" onclick="openModal('appointmentModal')">GHL Appointment workflow</a>
+      <a href="javascript:void(0);" class="card link-card" onclick="openModal('leadcaptureModal')">GHL Lead Capture workflow</a>
+      <a href="javascript:void(0);" class="card link-card" onclick="openModal('nurturingModal')">GHL Nurturing workflow</a>
+      <a href="javascript:void(0);" class="card link-card" onclick="openModal('emailcampaignModal')">GHL Email Campaign workflow</a>
+
 
     </div>
   </section>
@@ -132,21 +137,19 @@ I believe technology should make business easier, not harder. That’s why I foc
   </div>
 </div>
 
-<!-- AUTOMATION MODAL -->
-<div id="automationModal" class="modal">
+<!-- EMAIL TEMPLATE MODAL -->
+<div id="emailtemplateModal" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal('automationModal')">&times;</span>
-    <h2>Automation Workflows</h2>
-    <!-- automation content -->
-
+    <span class="close" onclick="closeModal('emailtemplateModal')">&times;</span>
+    <h2>Email Template Projects</h2>
+    <!-- email template content -->
+  
     <div class="card">
-      <img src="images/appointment.png" alt="automation Overview">
-      <img src="images/automationgym.png" alt="automation Overview">
-      <h3>Lead Nurturing Automation</h3>
-      <p>I built an automated workflow that captures new leads and sends follow-up emails and SMS messages automatically. 
-        This system helps businesses respond faster, nurture prospects, and increase conversion rates without manual work.</p>
+      <img src="images/campaign2.png" alt="Email Template Overview">
+      <h3>Email Template Design</h3>
+      <p>This email template was created using GoHighLevel email builder. I designed a responsive layout that works across devices and optimized the content for engagement and conversion.</p>
     </div>
-<p class="tools">TOOLS I USED: GoHighLevel, Automation Builder</p>
+<p class="tools">TOOLS I USED: GoHighLevel, Email Builder</p>
   </div>
 </div>
 
@@ -158,15 +161,87 @@ I believe technology should make business easier, not harder. That’s why I foc
     <!-- pipeline content -->
 
     <div class="card">
-      <img src="images/pipeline.png" alt="Pipeline Overview">
+      <img src="images/pipeline2.png" alt="Pipeline Overview">
       <h3>Sales Pipeline System</h3>
       <p>I set up a customized sales pipeline to track leads from initial contact to closed deals.
-         Each stage was designed to help the business monitor progress, manage follow-ups, and improve overall sales organization.</p>
+         Each stage was designed to help the business monitor progress, manage follow-ups, and improve overall sales organization.
+        This pipeline it will automatically update once the lead was contacted and tag as a closed deal.</p>
     </div>
 <p class="tools">TOOLS I USED: GoHighLevel, Automation Builder</p>
   </div>
 </div>
 
+<!-- Appointment MODAL -->
+<div id="appointmentModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('appointmentModal')">&times;</span>
+    <h2>Appointment Workflow</h2>
+    <!-- automation content -->
+
+    <div class="card">
+      <img src="images/appoint.workflow.png" alt="automation Overview">
+      <h3>Appointment Automation</h3>
+      <p>This appointment workflow automates scheduling and reminders, ensuring no appointments are missed and clients are consistently followed up with.
+        I put a tag in workflow so we can easily monitor the leads journey inside GoHighLevel.
+      </p>
+    </div>
+<p class="tools">TOOLS I USED: GoHighLevel, Automation Builder</p>
+  </div>
+</div>
+
+
+<!-- LEAD CAPTURE MODAL -->
+<div id="leadcaptureModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('leadcaptureModal')">&times;</span>
+    <h2>Lead Capture Workflow</h2>
+    <!-- lead capture content -->
+
+    <div class="card">
+      <img src="images/lead capture workflow.png" alt="Lead Capture Overview">
+      <h3>Lead Capture System</h3>
+      <p>I set up this automated workflow to capture new leads and tag them appropriately within GoHighLevel for easy tracking and management.
+        I used if/else for scenarios where the lead will be tagged as contacted or tagged as a closed deals.
+        And there's also a delay until new leads will reply to the email and system will automatically reply and tagged it.
+      </p>
+    </div>
+<p class="tools">TOOLS I USED: GoHighLevel, Automation Builder</p>
+  </div>
+</div>
+
+<!-- NURTURING MODAL -->
+<div id="nurturingModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('nurturingModal')">&times;</span>
+    <h2>Lead Nurturing Workflow</h2>
+    <!-- lead nurturing content -->
+
+    <div class="card">
+      <img src="images/lead nurturing workflow.png" alt="Lead Nurturing Overview">
+      <h3>Lead Nurturing System</h3>
+      <p>I set up an automated lead nurturing workflow that sends personalized emails and SMS messages to prospects based on their engagement level and behavior.
+        there's is 5 emails i created and every 3 days system will automatically send the email until the lead will captured.
+    </div>
+<p class="tools">TOOLS I USED: GoHighLevel, Automation Builder</p>
+  </div>
+</div>
+
+<!-- EMAIL CAMPAIGN MODAL -->
+<div id="emailcampaignModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('emailcampaignModal')">&times;</span>
+    <h2>Email Campaign Workflow</h2>
+    <!-- email campaign content -->
+
+    <div class="card">
+      <img src="images/emailcampaign.png" alt="Email Campaign Overview">
+      <h3>Email Campaign System</h3>
+      <p>I built this email campaign workflow to send auntomated email to the new leads and loss leads that already captured
+        inside of GoHighLevel so businesses dont need to pay for the ads and it will save them a money.  </p>
+    </div>
+<p class="tools">TOOLS I USED: GoHighLevel, Automation Builder</p>
+  </div>
+</div>
 
 <script>
 function openModal(modalId) {
